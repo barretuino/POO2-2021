@@ -1,0 +1,40 @@
+Notas de Aula 03/03/2021 - POO II
+
+- Componentes javax.swing --> construção de GUI
+	- JFrame - Formulário
+	- JTextField
+	- JLabel
+	- JButton
+	- JComboBox
+	...
+- Componentes AWT 
+	- FlowLayout
+	
+- ENUM - Modelagem de estruturas de enum
+- List - Coleções
+- MVC - Modelagem, Visualização e Controle
+
+- Como Eu identifico quando um componente é AWT e quando é SWING?
+
+AWT				SWING
+Frame			JFrame
+Button			JButton
+TextField		JTextField
+Label			JLabel
+ComboBox		JComboBox
+RadionButton	JRadionButton
+
+3 Passos Básicos
+Declarar
+Construir
+Adicionar
+
+- Invocar Tratamento de Ação
+	- No Java as ações ocorrem por um processo de delegação
+	componentes --> ser adicionado a lista de actions
+
+
+
+
+
+
