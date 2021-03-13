@@ -1,0 +1,31 @@
+Notas de Aula de 10/03/2021
+
+- Passos essênciais para a inclusão de itens Graficos
+   - Declaração
+   - Construção 
+   - Adição na JFrame (View)
+   
+- pjAula3
+	- br.fa4.view
+	- br.fa4.modelagem
+	- br.fa4.controle
+	
+- FlowLayout - Gerenciador basicamente de Horizontal
+- Borderlayout - Gerenciador de Escopo em Regiões (5 regiões)
+- GridLayout - Gerenciar nos eixos Verticais e Horizontais
+
+- MVC
+	M - Modelo - Cliente.java
+	V - View - FrmCadastroCliente.java
+	C - Controle ClienteController.java
+	
+	Tela  ------------------------->  Cliente
+	Campos						popular os atributos
+			----> Controller -->
+
+- Interface de Tratamento de Ações
+	- ActionListener --> actionPerformed(ActionEvent e)
+			
+			
+			
+			
