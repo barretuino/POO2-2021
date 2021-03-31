@@ -1,0 +1,112 @@
+Notas de Aula 31/03/2021
+Revisão para Avaliação Bimestral
+
+Atividade no dia 07/04/2021 contará com aproximadamente 8 questões:
+  Sendo que há necessidade em algumas delas de implementar codificação.
+  
+1) Desenvolvimento de GUI: awt e swing
+	A) GUI - Interfaces Gráficas com o Usuário definem a camada de 
+	visualização, cuja responsábilidade é a de prover a interação
+	usuário / sistema. Exibe formas pictograficas (botões, caixa de 
+	texto, diálogos, combox, labels e etc.).
+	
+	B) AWT - Abstract Window Toolkit: Uma das mais conhecidas bibliotecas
+	de componentes GUI do java. Utiliza o padrão gráfico do SO.
+		java.awt
+	   
+	   SWING - Como a extensão de AWT com o aperfeiçoamento de ter
+	sua própria biblioteca gráfica. Permite especificar uniformemente 
+	qual a aparência e o comportamento do aplicativo gráfico, 
+	independente da plataforma do SO.
+		javax.swing
+
+	C) Em relação ao AWT o Swing exibe como principal vantagem o fato
+	de podemos moficar a amparência do sistema, por meio do UIManager.
+	O UIManager é a biblioteca que define qual a aparência do sistema, 
+	por meio da biblioteca javax.swing.UIManager.
+	
+	D) A identificação dos componentes Visuais, passa por compreendermos
+	como que cada elemento interage e cumpre seu papel de entrada
+	ou de saída de dados.
+		Durante nossas aulas foi explicado que (com exceção dos casos
+		em que temos o tratamento de ação) utilizamos 3 passos:
+		1º Passo - A declaração do componente
+		2º Passo - A instânciação (construção) do componente
+		3º Passo - Adição do componte a frame ou panel
+
+2) Tratamento de Eventos
+    A) No java o tratamento de evento ele ocorre por meio da implementação
+	(utilizando o implements no inicio de nossas classes) de interfaces
+	responsáveis por tratar as ações. O tratamento ocorre por delegação.
+	Tratar por deleção significa: eu determino quais componentes visuais
+	passam a ser observados pelo tratador de eventos.
+	
+	1. Passo: requer a implementação da Interface responsável por
+	tratar o eventos (ActionListener)
+	2. Passo: declararmos os métodos que interceptam a delegação de
+	ações (public void actionPerformed(ActionEvent e) {)
+	3. Passo: Aqui complementado o item 1D, o 4º Passo seria 
+	adicionarmos o elemento ao listener de tratamento de ações.
+	Exemplo: btCadastrar.addActionListener(this);
+
+3) Gerenciadores de Layout 
+	A) Os gerenciadores de layout tem a responsábilidade de garantir
+	a correta disposição (adição, exibição e renderização) dos componentes
+	na GUI. Também prove a capacidade de tornar a aplicação responsiva.
+	   O adequado, e até para que funcione corretamente, é que todo
+	Frame e todo Panel tenha atribuido a ele um gerenciador de layout.
+	   Raramento a utilização de apenas um deles é suficiente, pois, em
+	muitos casos nossas GUI's requerem vários arranjos visuais que só
+	são possíveis, combinando mais que um gerenciador de layout.
+	
+	  I. FlowLayout: é um gerenciador de layout com preocupação apenas
+	  na disposição horizontal. São possíveis as regiões Left, Center e 
+	  Right. O default é center.
+	     setLayout(new FlowLayout());
+	  
+	  II. BorderLayout: é um gerenciador de layout baseado em 5 áreas
+	  (regiões). A região do topo (north) a região da base (south), a região
+	  a esquerda (west), a região central (center) e região a direita (east).
+	      É um gerenciador recomendado e muito utilizado quando inserimos
+	  paineis, por exemplo, à JFrame.
+	  
+	  III. GridLayout: exibe um comportamento de layout na forma de uma
+	  grade de células. O gerenciador de layout GridLayout divide
+	  o contêiner em uma grade de modo que os componentes podem ser 
+	  colocados nas linhas e colunas. 
+	       Os componentes são adicionados a um GridLayout iniciando 
+      a célula na parte superior esquerda da grade e prosseguindo da 
+	  esquerda para a direita até a linha estar cheia. Então o processo 
+	  continua da esquerda para direita na próxima linha e assim por 
+	  diante.
+
+4) Sobrecarga de Métodos e o Polimorfismo
+	- O principio da herança é que todo atributo ou método declarado na
+	classe ancestral (classe pai ou superclasse) é transmitido (herdado)
+	para a classe descendente (classe filho ou subclasse).
+	
+	Há dois tipos de herança: 
+	 - É um: representa a herança. Em um relacionamento “é um”, 
+	 um objeto de uma subclasse também pode ser tratado como um 
+	 objetos de sua superclasse. Utilizamos a palavra reservada extends
+	 Exemplo: public class frmCadastro extend JFrame {
+	 
+	 - Tem um: uma composição, os elementos herdados compõem a classe.
+	 Exemplo: um JButton em um JFrame. Representa a composição. Em um 
+	 relacionamento “tem um”, um objeto contém uma ou mais referencias 
+	 de objeto como membros.
+
+	 - Sobrecarga de Métodos é quando você tem métodos que tem o mesmo
+	 nome, porém exibem uma variação em seus argumentos.
+	  1. O número de argumentos
+	  2. O tipo dos argumentos
+	  3. A ordem dos argumentos
+
+5) Classes Abstratas e Interfaces
+	- As classes abstratas e as interfaces permitem
+	definirmos padrões a serem adotados na construção de classes.
+	- Sua utilização é recomendada quando desejamos especificar
+	como métodos devem ser implementados em classes. Um exemplo
+	muito útil é criarmos modelos de classes (por meio de interfaces)
+	padronizando como nossa área de desenvolvimento deve construir
+	todas as GUI's de um projeto.
