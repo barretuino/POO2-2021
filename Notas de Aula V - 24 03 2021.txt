@@ -1,0 +1,39 @@
+Notas de Aula 24/03/2021
+
+- Herança
+	- "É um" - uso da palavra reservada extends remete a esse tipo
+		public class Aluno extends Pessoa{
+		
+	- "Tem um" - quando internamente temos instancias de outras classes
+		public class frmCadastro extends JFrame{
+			public JButton btCadastrar;
+
+- A palavra reservada extends é um meio de herdar uma única classes
+- A palavra reservada implements é um meio de implementarmos multiplas
+interfaces
+			
+- Revisão sobre Polimorfimos: Sobrecarga de métodos
+	sintese: métodos cujo nome é o mesmo, com assinaturas distintas
+O Polimorfimo é um conceito que por meio da sobrecarga de métodos
+podemos implementar. Isso na prática nos dá a capacidade de exitirem
+métodos com o mesmo nome, porém com a variação em sua assinatura.
+	**
+	 * Uma Assinatura de método é caracterizada por 
+	 * três condições identificadas nos parâmetros e argumentos.
+	 * 1. Quantidade de Argumentos
+	 * 2. Tipos dos Argumentos
+	 * 3. Ordem dos Argumentos
+	 */
+- Sobreescrita: é quando um método que foi herdado de uma classes
+ancestral é reenscrito na classe filho. Isso representa um override
+do método. Tanto com atributos como métodos em que uma versão existe
+na classe filho que sobreescre a versão herdada da classe pai
+
+- Novos componentes JMenu, JMenuItem
+	1. Definir um JMenuBar --> Adicionar ao Frame
+	2. Dentro do JMenuBar --> MenuBar (Cadastro)
+	3. Dentro do MenuBar --> Itens (Veiculo)
+
+- Interfaces: definirmos modelos de estruturas de classes
+Principal uso é para a descrição de modelos de estruturas a serem
+implementadas.
