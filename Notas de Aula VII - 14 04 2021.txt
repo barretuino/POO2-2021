@@ -1,0 +1,36 @@
+Notas de Aula 14/04/2021
+
+Iniciando o 2º Bimestre
+- Revisão de Polimorfismo
+	O polimorfismo é conceito. E a técnica que usamos em uma linguagem de programação para implementar o conceito de polimofismo é a sobrecarga de métodos.
+	
+	Uso do Polimorfismo prático: normalmente quando não estamos prevendo que sempre os argumentos serão do mesmo tipo, terão a mesma ordem, a mesma quantidade.
+
+- Classes Abstratas
+	Definidas com o objetivo de padronização. Então nestas classes descrevemos métodos que precisam ser implementados por todas as subclasses que extendem ela.
+	
+	Quando descreve os métodos nas classes abstratas e define como abstract, quem dará corpo ao método é a quase que extends a classe abstrata. Exemplo AbstractCRUD, que implementa o que o método inserir deve fazer, é a classe frmCliente extends AbstractCRUD.
+	
+- Exemplo com List
+	Com o comando instaceof eu posso analisar se o objeto é uma "instancia de", por exemplo:
+			if(frame instanceof frmCliente) {
+				System.out.println("Foi a tela de cliente");
+			}else if(frame instanceof frmFornecedor) {
+				System.out.println("Foi a tela de fornecedor"); 
+			}else if(frame instanceof Object) {
+				System.out.println("Foi passado object"); 
+			}else {
+				System.out.println("Contém null");
+			}
+	
+- Interfaces
+	Uma interface em Java é uma especificação de um tipo (na forma de um conjunto de métodos) que não define nenhuma implementação para os métodos.
+
+	Exemplo que tivemos em aula: Interface de Tratamento de ações ActionListener. A ActionListener ela tem um método que é exigida sua implementação e todas as interfaces que implementam: método actionPerformed.
+	
+	Por meio de interfaces eu posso implementar multi dependencias (pseudo herança multipla)
+
+- Exemplo com Calculo com Datas	
+	A partir do Java 8 é possível se realizar cálculos diretos de datas utilizando-se das implementações presentes: LocalDate
+	
+- Exemplo de Predicado

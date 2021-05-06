@@ -1,0 +1,8 @@
+Notas de Aula 28/04/2021
+
+- Tratamento das exceções
+	Propagação da exceção
+
+- Programação defensiva: técnicas que tem por objetivo dar ao código uma massiva segurança, ou evitar problemas, usando de formar verificada, ações que podem ser geradoras de erros / exceptions.
+
+- Tratar a exceção quando não é possível evitar que ela aconteça.

@@ -1,0 +1,13 @@
+Notas de Aula 05/05/2021
+
+- Arquivos: estruturas que permitem que sejam armazenados de forma perene (não volátil e duradora) informações tratadas em sistema de informação.
+
+- Persistência de Dados: técnicas e também de estruturas dedicadas a realizar o armazenamento e a manipulação de dados que foram guardados de forma persistênte (duradora e não volátil).
+
+Tarefa para o Lar:
+   - Revisar os comandos básicos do SQL
+	- Create Table
+	- Select
+	- Insert
+	- Delete
+	- Update
