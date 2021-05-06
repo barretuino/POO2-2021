@@ -1,0 +1,4 @@
+Leitura de outro arquivo
+Outra linha
+Mais uma linha
+Essa é a linha
